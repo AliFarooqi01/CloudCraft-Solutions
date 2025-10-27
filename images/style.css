@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/*Service Hero*/
+.service-hero {
+  background: url('Assets/service-bg.png') center/cover no-repeat;
+  height: 100vh;
+  width: 100%;
+  align-content: center;
+  max-width: 1440px;
+
+}
+.service-hero h1 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.service-hero p {
+  width: 36%;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+.service-2 {
+  background: url('Assets/support-bg.png');
+  background-position: top;
+  width: 100%;
+  align-content: center;
+  max-width: 1440px;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+.service-2 h2 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 700;
+}
+
+.service-2 p {
+  font-size: 22px;
+  font-weight: 500;
+  margin: auto;
+}
+
+.service-box {
+  background: #0f0f0f;
+  border-radius: 20px;
+  padding: 40px;
+  transition: all 0.3s ease;
+  text-align: left;
+  height: 100%;
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  background: #161616;
+}
+
+.service-icon img {
+  width: 75px;
+  margin-bottom: 20px;
+
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.service-text {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  font-weight: 500;
+  ;
+}
+
+.learn-more {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.learn-more:hover {
+  color: white;
+}
+
+.service-3 h2 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 700;
+}
+
+
+.service-2 .ai-forecast {
+  font-size: 25px !important;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+
+/*********************Service Page End******************/
+
+/*********************Contact Us Page End******************/
+
+.hero-section {
+  padding: 80px 0;
+  background: linear-gradient(90deg, #000 50%, #0b0b0b 50%);
+  color: #fff;
+}
+
+.hero-section h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.hero-section p {
+  color: #fff;
+  margin-top: 20px;
+  line-height: 35px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.hero-btn {
+  background: #3b82f6;
+  border: none;
+  color: #fff;
+  padding: 10px 22px;
+  margin-top: 20px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  background: #2563eb;
+}
+
+/* Contact Section */
+.contact-section {
+  background: url('Assets/support-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.contact-section h3 {
+  font-weight: 700;
+  font-size: 41px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.contact-section p {
+  color: #fff;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.form-div {
+  background: #000;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+.form-control {
+  background-color: #fff;
+  border: none;
+  color: #000;
+  border-radius: 0;
+  height: 50px;
+}
+
+textarea.form-control {
+  height: auto;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #3b82f6;
+}
+
+.send-btn {
+  background: #0066ff;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.send-btn:hover {
+  background: #0052cc;
+}
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.get-heading {
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.info-list li {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.get-in-touch i {
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-section {
+    background: #000;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 38px;
+  }
+
+  .hero-section p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .hero-section img {
+    margin-top: 30px;
+    max-width: 80%;
+  }
+
+  .contact-section h3,
+  .contact-section p {
+    text-align: center;
+  }
+
+  .form-div {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .get-in-touch {
+    text-align: center;
+  }
+
+  .info-list li {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  .get-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section h1 {
+    font-size: 32px;
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+  .contact-section p {
+    font-size: 18px;
+  }
+
+  .form-div {
+    padding: 20px;
+  }
+
+  .message {
+    font-size: 28px;
+  }
+}
+
+
+.form-div h2 {
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+
+
+/**********************About Page Start**************/
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.feature-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  transition: 0.3s;
+  height: 100%;
+}
+
+
+.feature-card p{
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.feature-card:hover {
+  background: #1a1a1a;
+  transform: translateY(-5px);
+}
+
+.feature-card:hover p{
+  color: #fff;
+}
+
+
+.feature-card:hover h4{
+  color: #fff;
+}
+.feature-card h4 {
+  font-size: 25px;
+  line-height: 26px;
+  font-weight: 700;
+  display: inline;
+  color: #000;
+}
+
+.feature-number {
+  font-size: 50px;
+  font-weight: 700;
+  color: #4b6bff;
+  display: inline;
+}
+
+.about-image,
+.table-image {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.check-list li {
+  margin-bottom: 10px;
+}
+
+.check-list li::before {
+  content: "✔ ";
+  color: #4b6bff;
+}
+
+/* Credentials Section */
+.cred-card {
+  background: #111;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.cred-card:hover {
+  background: #1a1a1a;
+  transform: translateY(-4px);
+}
+
+.cred-icon img{
+  width: 60px;
+}
+.cta-section h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  background-color: #4b6bff;
+  border: none;
+  padding: 12px 30px;
+  color: #fff;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.together-section {
+  background: url('Assets/support-bg.png');
+  padding: 60px;
+  text-align: center;
+}
+
+.together-section h2 {
+  font-size: 41px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.bolderp {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 500;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px
+}
+
+.togetherp{
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
+  margin-bottom: 20px
+}
+.about-section h1{
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.about-section p{
+line-height: 35px;
+font-size: 20px;
+font-weight: 300;
+width: 90%;
+}
+
+
+.bring-head{
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 700;
+}
+.point{
+  margin-bottom: 30px;
+}
+
+.point span img{
+  width: 25px;
+}
+
+.point p{
+  margin-left: 30px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.credentials h5{
+  text-align: left;
+  font-weight: 600;
+  line-height: 35px;
+}
+
+.credentials p{
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  text-align: left;
+}
+
+/**************Privacy Policy Page Start***************/
+.privacy{
+  background: url('Assets/support-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top:80px;
+  padding-bottom: 80px;
+}
+
+
+.privacy .custom-container h1{
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 70px;
+  margin-bottom: 60px
+}
+
+
+.privacy h3{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.privacy p, li{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+
+.privacy .custom-container a{
+  color: blue;
+  text-decoration: none;
+}
+
