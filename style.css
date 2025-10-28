@@ -88,50 +88,65 @@ p {
 /* //// ===== Animations=======/// */
 /* ==== ANIMATIONS ==== */
 .fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: all 0.8s ease-out;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
 }
+
 .fade-up.show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .fade-left {
-  opacity: 0;
-  transform: translateX(40px);
-  transition: all 0.8s ease-out;
+    opacity: 0;
+    transform: translateX(40px);
+    transition: all 0.8s ease-out;
 }
+
 .fade-left.show {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .fade-right {
-  opacity: 0;
-  transform: translateX(-40px);
-  transition: all 0.8s ease-out;
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: all 0.8s ease-out;
 }
+
 .fade-right.show {
-  opacity: 1;
-  transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .zoom-in {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: all 0.8s ease-out;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: all 0.8s ease-out;
 }
+
 .zoom-in.show {
-  opacity: 1;
-  transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* Optional: delay for card staggering */
-[data-delay="1"] { transition-delay: 0.1s; }
-[data-delay="2"] { transition-delay: 0.2s; }
-[data-delay="3"] { transition-delay: 0.3s; }
-[data-delay="4"] { transition-delay: 0.4s; }
+[data-delay="1"] {
+    transition-delay: 0.1s;
+}
+
+[data-delay="2"] {
+    transition-delay: 0.2s;
+}
+
+[data-delay="3"] {
+    transition-delay: 0.3s;
+}
+
+[data-delay="4"] {
+    transition-delay: 0.4s;
+}
 
 
 /* ===== HEADER ===== */
@@ -284,7 +299,7 @@ p {
 }
 
 .hero p {
-    max-width: 700px;
+    max-width: 770px;
     font-size: 25px;
     margin: 0 auto;
     font-weight: 500;
@@ -348,6 +363,8 @@ p {
 }
 
 .need-help h2 {
+    max-width: 600px;
+    margin: 10px auto;
     font-size: 45px;
     line-height: 55px;
     font-weight: 700;
@@ -373,6 +390,8 @@ p {
 }
 
 .support-you p {
+    max-width: 900px;
+    margin: 10px auto;
     font-size: 22px;
     font-weight: 500;
     line-height: 32px;
@@ -973,6 +992,7 @@ h3 {
 
 
 .feature-card p {
+    margin-top: 20px;
     color: #000;
     font-size: 18px;
     font-weight: 500;
@@ -1468,9 +1488,12 @@ li {
 @media (max-width: 576px) {
 
 
-
+    .play-btn {
+        width: 60px;
+        height: 60px;
+    }
     .btn-primary {
-        padding: 8px 12px !important;
+        padding: 8px 8px !important;
         font-size: 14px;
     }
 
