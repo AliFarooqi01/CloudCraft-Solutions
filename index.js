@@ -84,3 +84,16 @@ if (playBtn) {
         video.play();
     });
 }
+
+// === SCROLL ANIMATIONS ===
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+      observer.unobserve(entry.target); // optimize performance
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-up, .fade-left, .fade-right, .zoom-in')
+  .forEach(el => observer.observe(el));

@@ -85,6 +85,55 @@ p {
     border-color: var(--bg-blue);
 }
 
+/* //// ===== Animations=======/// */
+/* ==== ANIMATIONS ==== */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.8s ease-out;
+}
+.fade-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.8s ease-out;
+}
+.fade-right.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.zoom-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s ease-out;
+}
+.zoom-in.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Optional: delay for card staggering */
+[data-delay="1"] { transition-delay: 0.1s; }
+[data-delay="2"] { transition-delay: 0.2s; }
+[data-delay="3"] { transition-delay: 0.3s; }
+[data-delay="4"] { transition-delay: 0.4s; }
+
+
 /* ===== HEADER ===== */
 .main-header {
     position: fixed;
@@ -205,7 +254,7 @@ p {
 /* ===== HERO SECTION ===== */
 .hero {
     padding-top: 150px;
-    background: url('./images/Group-9.png') center/cover no-repeat;
+    background: url('./images/Group-9.webp') center/cover no-repeat;
     position: relative;
 }
 
@@ -290,7 +339,7 @@ p {
 
 /* ///Need Help ///  */
 .need-help {
-    background: url("./images/Group-8.png") center/cover no-repeat;
+    background: url("./images/Group-8.webp") center/cover no-repeat;
     padding: 100px 0px 50px;
 }
 
@@ -312,7 +361,7 @@ p {
 
 /* ///Need Help ///  */
 .support-you {
-    background: url("./images/Group-9.png") center/cover no-repeat;
+    background: url("./images/Group-9.webp") center/cover no-repeat;
     padding: 100px 0px 50px;
 }
 
@@ -408,7 +457,7 @@ p {
 /* /// when //  */
 .when {
     padding: 60px 0px;
-    background: url("./images/Group-9.png");
+    background: url("./images/Group-9.webp");
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 50%;
@@ -423,7 +472,7 @@ p {
 /* //work me /// */
 .work-me {
     padding: 80px 180px;
-    background: url("./images/Group-8.png");
+    background: url("./images/Group-8.webp");
     background-size: 85%;
     background-position-x: -14%;
     background-position-y: 1%;
@@ -446,7 +495,7 @@ p {
 .site-footer {
     padding-top: 80px;
     padding-bottom: 20px;
-    background: url("./images/Group-9.png");
+    background: url("./images/Group-9.webp");
     background-size: cover;
     background-size: 85%;
     background-position-x: 50%;
@@ -561,7 +610,7 @@ p {
 
 /* ===== key-features section ===== */
 .key-features {
-    background: url("./images/Group-8.png") center/cover no-repeat;
+    background: url("./images/Group-8.webp") center/cover no-repeat;
     padding: 100px 0px 50px;
 }
 
@@ -595,7 +644,7 @@ p {
 
 /* //// other service /// */
 .other-services {
-    background: url("./images/Group-8.png") center/cover no-repeat;
+    background: url("./images/Group-8.webp") center/cover no-repeat;
     padding: 100px 0px 50px;
     overflow: hidden;
 }
@@ -659,13 +708,13 @@ p {
 /* ======== fawad css styles START ================= */
 /*Service Hero*/
 .service-hero .custom-container {
-    background: url('./images/service-bg.png') center/cover no-repeat !important;
+    background: url('./images/service-bg.webp') center/cover no-repeat !important;
 
 }
 
 
 .service-2 {
-    background: url('./images/support-bg.png');
+    background: url('./images/Group-8.webp');
     background-position: top;
     width: 100%;
     align-content: center;
@@ -785,7 +834,7 @@ p {
 
 /* Contact Section */
 .contact-section {
-    background: url('./images/Group-8.png');
+    background: url('./images/Group-8.webp');
     background-size: cover;
     background-position: center;
     padding: 80px 0;
@@ -865,11 +914,13 @@ textarea.form-control {
     color: #fff;
     margin-bottom: 25px;
 }
-.info-list i{
+
+.info-list i {
     font-size: 25px;
 
 }
-.info-list .ldn{
+
+.info-list .ldn {
     margin-top: 30px;
 }
 
@@ -893,8 +944,23 @@ h3 {
     font-weight: 700;
 }
 
-.section {
-    padding: 80px 60px;
+.about-hero {
+    padding: 160px 0px 50px 0px;
+}
+
+.feature-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: url("./images/Group-8.webp") center/cover no-repeat;
+}
+
+.bring {
+    padding-bottom: 50px;
+}
+
+.credentials {
+    padding: 50px 0px;
+    background: url("./images/Group-8.webp") center/cover no-repeat;
 }
 
 .feature-card {
@@ -993,7 +1059,7 @@ h3 {
 }
 
 .together-section {
-    background: url('./images/support-bg.png');
+    background: url('./images/Group-8.webp');
     padding: 60px;
     text-align: center;
 }
@@ -1074,7 +1140,7 @@ h3 {
 
 /**************Privacy Policy Page Start***************/
 .privacy {
-    background: url('./images/Group-8.png');
+    background: url('./images/Group-8.webp');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -1462,7 +1528,7 @@ li {
     .site-footer {
         padding-top: 40px;
         padding-bottom: 20px;
-        background: url("./images/Group-9.png");
+        background: url("./images/Group-9.webp");
         background-size: cover;
         background-position: center !important;
     }
